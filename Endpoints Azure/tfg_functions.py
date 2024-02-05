@@ -6,9 +6,10 @@ def create_student_html(student_info: list):
     studentname = student_info[0]['firstname']
 
     html = f'<p>¡Bienvenido de nuevo {studentname}!</p>'
-    html += f'<p>Tu último inicio de sesión fue el {last_login_day}, lo cual significa '
-    html += f'que llevas {n_logins} inicios de sesión desde que entraste en la UPCT 😎</p><br>'
-    html += f'<p>¡Sigue así que vas muy bien! 💪</p>'
+    html += f'<p>Tu último inicio de sesión en el aula virtual fue el {last_login_day}, '
+    html += f'y ese día marca tu inicio de sesión número {n_logins} desde que '
+    html += f'ingresaste en la UPCT. 😎</p>'
+    html += f'<p>¡Sigue así, vas muy bien! 💪</p>'
 
     return html
 
